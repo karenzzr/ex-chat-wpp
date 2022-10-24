@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+    background-image: url(assets/fundo_mensagem.png);
+    background-repeat: round;
+}
+
+main {
+    height: 100vh;
+    width: 40vw;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+}
+
+#usuario2 {
+    justify-content: end;
+}
+
+.areaUsuario {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 10px;
+}
+
+.areaMensagem {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+img {
+    width: 150px;
+    border-radius: 50%;
+    margin: 5px;
+}
+
+#usuario1 img {
+    border: 3px solid lightblue;
+}
+
+#usuario2 img {
+    border: 3px solid lightgreen;
+}
+
+
+input[type="text"] {
+    line-height: 60px;
+    border-radius: 10px;
+    width: 80%;
+
+    padding: 0px 5px;
+}
+
+input[type="button"] {
+    background-image: url(assets/enviar.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border-style: none;
+}
+
+input[type="button"]:hover {
+    border-style: solid;
+    border-color: lightgreen;
+}
+
+ul {
+    list-style-type: none;
+    height: 100vh;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+
+    /* scroll automático na lista */
+    overflow: auto;
+}
+
+li {
+    line-height: 30px;
+    margin-top: 5px;
+    padding: 8px;
+    border-radius: 15px;
+    word-wrap: break-word;
+}
+
+.mensagemUsuario1 {
+    background-color: lightblue;
+    text-align: right;
+    width: fit-content;
+    align-self: flex-start;
+}
+
+.mensagemUsuario2 {
+    background-color: lightgreen;
+    text-align: right;
+    width: fit-content;
+    align-self: flex-end;
+}

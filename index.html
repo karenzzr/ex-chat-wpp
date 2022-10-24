@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Projeto Chat</title>
+</head>
+
+<body>
+    <section id="usuario1">
+        <div class="areaUsuario">
+            <img src="assets/user1.jpg">
+            <div class="areaMensagem">
+                <input type="text" id="mensagemUsuario1" placeholder="Digite sua mensagem...">
+                <input type="button" onclick="envio1()">
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <ul id="listaDeMensagens">
+            <li class="mensagemUsuario1"></li>
+        </ul>
+    </main>
+
+    <section id="usuario2">
+        <div class="areaUsuario">
+            <img src="assets/user2.png">
+            <div class="areaMensagem">
+                <input type="text" id="mensagemUsuario2" placeholder="Digite sua mensagem...">
+                <input type="button" onclick="envio2()">
+            </div>
+        </div>
+    </section>
+
+    <script src="chat.js"></script>
+</body>
+
+</html>
